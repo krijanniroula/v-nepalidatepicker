@@ -4,9 +4,8 @@
 
 # Demo: 
 
-![Demo1](https://github.com/krijanniroula/v-nepalidatepicker/blob/master/assets/demo1.PNG)
+![Demo1](https://github.com/krijanniroula/v-nepalidatepicker/blob/master/assets/demo1.PNG)    ![Demo2](https://github.com/krijanniroula/v-nepalidatepicker/blob/master/assets/demo2.PNG)
 
-![Demo2](https://github.com/krijanniroula/v-nepalidatepicker/blob/master/assets/demo2.PNG)
 
 ## Install
 ```shell
