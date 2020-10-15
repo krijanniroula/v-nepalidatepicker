@@ -2,6 +2,12 @@
 
 > An easy-to-use and customizable nepali date picker component powered by Vue js
 
+# Demo: 
+
+![Demo1](https://github.com/krijanniroula/v-nepalidatepicker/blob/master/assets/demo1.PNG)
+
+![Demo2](https://github.com/krijanniroula/v-nepalidatepicker/blob/master/assets/demo2.PNG)
+
 ## Install
 ```shell
 npm install v-nepalidatepicker
