@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="calendar__footer">
-        <button @click="today()">Today</button>
+        <button @click="today()">{{ formatedTodayText }}</button>
       </div>
     </div>
   </div>
@@ -111,11 +111,11 @@ export default {
   props: {
     value: { type: String, default: "" },
     format: { type: String, default: "YYYY-MM-DD" },
-    calender_type: { type: String, default: "English" },
+    calenderType: { type: String, default: "English" },
     yearSelect: { type: Boolean, default: true },
     monthSelect: { type: Boolean, default: true },
     classValue: { type: String, default: "" },
-    placeholder: { type: String, default: "YYYY-MM-DD" },
+    placeholder: { type: String, default: "" },
   },
   model: {
     event: "change",
@@ -127,7 +127,7 @@ export default {
       visible: false,
       startingYear: 2001,
       numberofYears: 87,
-      formatNepali: this.calender_type == "Nepali" ? true : false,
+      formatNepali: this.calenderType == "Nepali" ? true : false,
       endDay: null,
       yearValue:
         this.value == ""
@@ -187,6 +187,9 @@ export default {
       return this.formatNepali
         ? this.date.format("dddd, dd mmmm")
         : this.date.format("DDDD, DD MMMM");
+    },
+    formatedTodayText() {
+      return this.formatNepali ? "आज" : "Today";
     },
   },
   methods: {
@@ -317,17 +320,16 @@ export default {
   align-items: center;
 }
 .calendar__month select {
-  height: 25px;
+  height: 28px;
   width: 100px;
   border-radius: 5px;
   border-color: #7ca3f1;
   text-align-last: center;
 }
 .calendar__month button {
-  width: 22px;
-  height: 22px;
-  padding: 3px;
+  width: 25px;
   margin-right: 4px;
+  height: 28px;
   margin-left: 4px;
   border-radius: 5px;
   color: white;
