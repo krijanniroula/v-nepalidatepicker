@@ -14,19 +14,23 @@ npm install v-nepalidatepicker
 
 ## Quick Start
 ``` javascript
-import Vue from 'vue'
-import VNepaliDatePicker from 'v-nepalidatepicker'
+import VNepaliDatePicker from 'v-nepalidatepicker';
 
-Vue.use(VNepaliDatePicker)
+export default {
+  components: {
+    VNepaliDatePicker,
+  },
+  // rest of the component
+}
 
-```
+Or even used via <script> tag in the browser directly:
 
-## Examples
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/v-nepalidatepicker"></script>
+...
+<v-nepalidatepicker />
+...
 
-```vue
-<template>
-  <v-nepalidatepicker />
-</template>
 ```
 
 ## Customizable Properties
