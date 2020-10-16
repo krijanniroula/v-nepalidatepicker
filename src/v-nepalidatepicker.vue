@@ -18,6 +18,7 @@
           <button class="calendar__month__prev" @click="prev()">
             <b>></b>
           </button>
+          <span>{{ formatedYearOrMonth }}</span>
           <select
             @change="monthSelectChange"
             v-model="monthValue"
@@ -177,6 +178,26 @@ export default {
         }
       });
       return this.startMonthValue;
+    },
+    formatedYearOrMonth() {
+      if (this.monthSelect == false && this.yearSelect == false) {
+        return this.formatNepali
+          ? this.date.format("mmmm yyyy")
+          : this.date.format("MMMM YYYY");
+      }
+
+      if (this.monthSelect == false) {
+        return this.formatNepali
+          ? this.date.format("mmmm")
+          : this.date.format("MMMM");
+      }
+
+      if (this.yearSelect == false) {
+        return this.formatNepali
+          ? this.date.format("yyyy")
+          : this.date.format("YYYY");
+      }
+      return "";
     },
     formatedYear() {
       return this.formatNepali
