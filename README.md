@@ -4,7 +4,7 @@
 
 # Demo: 
 
-![Demo1](https://github.com/krijanniroula/v-nepalidatepicker/blob/master/assets/demo1.PNG)    ![Demo2](https://github.com/krijanniroula/v-nepalidatepicker/blob/master/assets/demo2.PNG)
+https://codesandbox.io/s/quizzical-banzai-mv19x
 
 
 ## Install
