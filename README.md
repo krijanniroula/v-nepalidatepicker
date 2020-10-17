@@ -10,6 +10,10 @@ https://codesandbox.io/s/quizzical-banzai-mv19x
 ## Install
 ```shell
 npm install v-nepalidatepicker
+
+OR
+
+yarn add v-nepalidatepicker
 ```
 
 ## Quick Start
