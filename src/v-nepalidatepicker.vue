@@ -273,7 +273,7 @@ export default {
     },
     today() {
       this.formatedValue = new NepaliDate().format(this.format);
-      this.date = new NepaliDate(this.formatedValue);
+      this.date = new NepaliDate();
       this.setMonthAndYear(this.date.getMonth(), this.date.getYear());
       this.hide();
     },
