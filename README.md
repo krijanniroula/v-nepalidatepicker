@@ -51,7 +51,8 @@ The following customizable properties can be added to the component
 
 ## Examples - classValue
 
-This works exactly as class properties. Eg: classValue="form-control"
+This works exactly as class properties. Eg: classValue="form-control" (boostrap class)
+(Note : In class="form-control", input will be rendered inside another input.)
 
 ```vue
 <template>
