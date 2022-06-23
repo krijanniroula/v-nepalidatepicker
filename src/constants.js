@@ -156,4 +156,4 @@ export const NEPALI_MONTH = [
     "माघ",
     "फाल्गुण",
     "चैत्र",
-]
+];
