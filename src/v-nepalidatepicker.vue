@@ -282,6 +282,14 @@ export default {
       this.yearValue = year;
     },
   },
+  watch:{
+    formatedValue(value){
+      let date = new NepaliDate(value)
+      this.date = date;
+      this.setMonthAndYear(date.month, date.year);
+      this.$emit("change", value);
+    }
+  }
 };
 </script>
 
